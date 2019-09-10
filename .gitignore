@@ -1,0 +1,12 @@
+*.pyc
+./NAPS/*
+./IAPS/*
+./EMOTIC/*
+./runs/*
+./runs2/*
+./FI/*
+./runs_mldr/*
+./runs_emotic_test/*
+./checkpoints/*
+*.pkl
+./.torch/*
