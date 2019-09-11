@@ -22,7 +22,6 @@ class visual_processer(k_processor.kernel_processer):
         x_m=M.size(2)
         y_m=M.size(3)
         M=M.view(-1,1,x_m*y_m)
-        # M=F.sigmoid(M)
         M=M.view(-1,1,x_m,y_m)
         return y.detach().cpu().numpy(),out.detach().cpu().numpy(),x.detach().cpu().numpy(),M.detach().cpu().numpy()
 

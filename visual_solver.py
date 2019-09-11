@@ -39,16 +39,6 @@ class visual_solver(solver.solver):
         t=open(os.path.join(path_name,txt_file),"w")
         for i in range(0,len(self.real_labels)):
             t.write("   "+str(self.real_labels[i][0])+" "+str(self.real_labels[i][1])+" "+str(self.real_labels[i][2])+"\n")
-        # c_y=self.real_labels>0.5
-        # c_y=c_y.astype(np.float)
-        # c_pred=self.pred_labels>0.5
-        # c_pred=c_pred.astype(np.float)
-        #
-        # tt=np.sum(c_y*c_pred)
-        # tf=np.sum(c_y*(1-c_pred))
-        # ft=np.sum((1-c_y)*c_pred)
-        # ff=np.sum((1-c_y)*(1-c_pred))
-        # t.write("\n"+tt+" "+tf+" "+ft+" "+ff+"\n")
         t.close()
 
     def main(self,param_dict):
